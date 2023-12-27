@@ -25,7 +25,7 @@ function App() {
         formData.append('files', file);
       });
 
-      const response = await axios.post('http://localhost:5000/process-excel', formData, {
+      const response = await axios.post('http://5.35.88.216:3000/process-excel', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -70,7 +70,7 @@ function App() {
               <Typography variant="h6" gutterBottom>
                 Ссылка на файл с валидными номерами:
               </Typography>
-              <a href={`http://localhost:5000/download_csv/${resultValidUrl}`} download>
+              <a href={`http://5.35.88.216:3000/download_csv/${resultValidUrl}`} download>
                 Скачать файл с валидными номерами
               </a>
 
@@ -81,7 +81,7 @@ function App() {
               <Typography variant="h6" gutterBottom>
                 Ссылка на файл с невалидными номерами:
               </Typography>
-              <a href={`http://localhost:5000/download_csv/${resultInvalidUrl}`} download>
+              <a href={`http://5.35.88.216:3000/download_csv/${resultInvalidUrl}`} download>
                 Скачать файл с невалидными номерами
               </a>
 
