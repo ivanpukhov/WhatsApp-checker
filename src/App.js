@@ -7,6 +7,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
 function App() {
+  const [procent, setProcent] = useState([]);
   const [selectedFiles, setSelectedFiles] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [resultValidUrl, setResultValidUrl] = useState(null);
@@ -34,6 +35,7 @@ function App() {
       // Получение ссылок на файлы с валидными и невалидными номерами
       setResultValidUrl(response.data.valid_path);
       setResultInvalidUrl(response.data.invalid_path);
+      setProcent(response.data.valid_percentage);
     } catch (error) {
       console.error(error);
     } finally {
@@ -65,6 +67,11 @@ function App() {
             </Button>
           </Grid>
         </Grid>
+        {
+          procent && (
+              <h2>Валидных номеров: {procent} %</h2>
+            )
+        }
         {resultValidUrl && (
             <div>
               <Typography variant="h6" gutterBottom>
