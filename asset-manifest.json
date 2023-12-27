@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/WhatsApp-checker/static/css/main.e6c13ad2.css",
+    "main.js": "/WhatsApp-checker/static/js/main.a75d1db7.js",
+    "static/js/787.eaad366d.chunk.js": "/WhatsApp-checker/static/js/787.eaad366d.chunk.js",
+    "index.html": "/WhatsApp-checker/index.html",
+    "main.e6c13ad2.css.map": "/WhatsApp-checker/static/css/main.e6c13ad2.css.map",
+    "main.a75d1db7.js.map": "/WhatsApp-checker/static/js/main.a75d1db7.js.map",
+    "787.eaad366d.chunk.js.map": "/WhatsApp-checker/static/js/787.eaad366d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.a75d1db7.js"
+  ]
+}
