@@ -26,7 +26,7 @@ function App() {
         formData.append('files', file);
       });
 
-      const response = await axios.post('https://ivaninbox.site/process-excel', formData, {
+      const response = await axios.post('https://stormy-springs-25264-821c249c1287.herokuapp.com/process-excel', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -77,7 +77,7 @@ function App() {
               <Typography variant="h6" gutterBottom>
                 Ссылка на файл с валидными номерами:
               </Typography>
-              <a href={`https://ivaninbox.site/download_csv/${resultValidUrl}`} download>
+              <a href={`https://stormy-springs-25264-821c249c1287.herokuapp.com/download_csv/${resultValidUrl}`} download>
                 Скачать файл с валидными номерами
               </a>
 
@@ -88,7 +88,7 @@ function App() {
               <Typography variant="h6" gutterBottom>
                 Ссылка на файл с невалидными номерами:
               </Typography>
-              <a href={`https://ivaninbox.site/download_csv/${resultInvalidUrl}`} download>
+              <a href={`https://stormy-springs-25264-821c249c1287.herokuapp.com/download_csv/${resultInvalidUrl}`} download>
                 Скачать файл с невалидными номерами
               </a>
 
